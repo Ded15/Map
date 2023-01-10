@@ -14,9 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MapTest {
     private WebDriver driver;
 
-
     @BeforeAll
-    static void setupClass() {
+    static void setUppAll(){
+        System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
     }
 
